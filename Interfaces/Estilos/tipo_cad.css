@@ -39,7 +39,7 @@ body{
   .button {
     background-color: rgb(6, 11, 20); 
     color: #cef3f5; 
-    border: 2px solid #cef3f5;
+    border: 1px solid #cef3f5;
   }
   
   .button:hover {
@@ -48,6 +48,7 @@ body{
   }
   
 #logo{
+    margin-top: 10px;
     width: 100px;
 }
 
@@ -57,7 +58,7 @@ body{
     border-radius: 30px;
     border-style: solid;
     border-width: 0px;
-    width: 700px;
+    width: 600px;
     margin: 1;
     position: absolute;
     top: 50%;
