@@ -20,8 +20,6 @@
 }
 
 *, body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
@@ -31,7 +29,7 @@
 
 html, body {
     height: 100%;
-    background-color: #152733;
+    background-color: #131726;
     overflow: hidden;
 }
 
@@ -61,17 +59,17 @@ html, body {
 }
 
 .form-content .form-items {
-    border: 3px solid #fff;
     padding: 40px;
     display: inline-block;
     width: 100%;
     min-width: 540px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    border-radius: 10px;
+    border-radius: 30px;
     text-align: left;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    background-color: rgb(6, 11, 20);
 }
 
 .form-content h3 {
