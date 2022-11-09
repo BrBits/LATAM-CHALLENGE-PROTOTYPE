@@ -6,27 +6,41 @@ body{
     margin: auto;
 }
 
-.button {
+.button1 {
     border: none;
     color: white;
     padding: 16px 32px;
+    width: 300px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 20px 10px;
-    transition-duration: 0.6s;
+    font-size: 18px;
+    margin: 30px 5px 10px 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+.button2 {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 5px 5px 40px 5px;
+    transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 8px;
   }
   
-  .button1 {
+  .button {
     background-color: rgb(6, 11, 20); 
     color: #cef3f5; 
-    border: 1px solid #cef3f5;
+    border: 2px solid #cef3f5;
   }
   
-  .button1:hover {
+  .button:hover {
     background-color: #213b55ff;
     color: #cef3f5;
   }
@@ -41,7 +55,7 @@ body{
     border-radius: 30px;
     border-style: solid;
     border-width: 0px;
-    width: 700px;
+    width: 600px;
     margin: 1;
     position: absolute;
     top: 50%;
