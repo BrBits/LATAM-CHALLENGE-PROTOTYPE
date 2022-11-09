@@ -1,4 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+:root{
+    --back_grande: #131726;
+    --back_caixa: rgb(6, 11, 20);
+    --form_color: black;
+    --form_border: #686868;
+    --form_text: #cef3f5;
+    --link_color: rgb(19, 159, 214);
+}
+
+#logo{
+    width: 100px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 *, body {
     font-family: 'Poppins', sans-serif;
@@ -7,6 +26,8 @@
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 html, body {
     height: 100%;
