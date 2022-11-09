@@ -1,3 +1,12 @@
+:root{
+    --back_grande: #131726;
+    --back_caixa: rgb(6, 11, 20);
+    --form_color: black;
+    --form_border: #686868;
+    --form_text: #cef3f5;
+    --link_color: rgb(19, 159, 214);
+}
+
 body{
     background-color:  #131726 !important;
 }
