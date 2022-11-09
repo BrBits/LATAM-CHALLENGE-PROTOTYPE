@@ -5,6 +5,11 @@
     --form_border: #686868;
     --form_text: #cef3f5;
     --link_color: rgb(19, 159, 214);
+    --ultimo-width: 900px;
+    --ultimo-heigth: 400px;
+    --destaque-width: 240px;
+    --destaque-heigth: 350px;
+    --post-margin: 10px;
 }
 
 body{
@@ -34,4 +39,40 @@ body{
 
 #menus li a:hover{
     text-decoration: none;
+}
+
+#nome-post{
+    color: var(--form_text);
+    margin: 20px;
+    font-size: 45px;
+}
+
+#ultimo{
+    float: left;
+    width: var(--ultimo-width);
+    height: var(--ultimo-heigth);
+}
+
+#post{
+    width: calc(var(--ultimo-width) + var(--destaque-width) + 4 * var(--post-margin));
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+.post{
+    border-radius: 30px;
+    background-color: var(--back_caixa);
+    margin: var(--post-margin);
+}
+
+.destaque{
+    float: right;
+    width: var(--destaque-width);
+    height: var(--destaque-heigth); 
+}
+
+.anteriores{
+    float: left;
+    width: calc(var(--ultimo-width)/2 - var(--post-margin));
+    height: calc(2 * var(--destaque-heigth) - var(--ultimo-heigth));
 }
