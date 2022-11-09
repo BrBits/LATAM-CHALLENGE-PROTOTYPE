@@ -10,10 +10,11 @@ body{
     border: none;
     color: white;
     padding: 16px 32px;
-    width: 300px;
+    width: 350px;
     text-align: center;
     display: inline-block;
     font-size: 18px;
+    text-decoration: none;
     margin: 30px 5px 10px 5px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -24,10 +25,11 @@ body{
     border: none;
     color: white;
     padding: 16px 32px;
-    width: 300px;
+    width: 350px;
     text-align: center;
     display: inline-block;
     font-size: 18px;
+    text-decoration: none;
     margin: 5px 5px 40px 5px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -55,7 +57,7 @@ body{
     border-radius: 30px;
     border-style: solid;
     border-width: 0px;
-    width: 600px;
+    width: 700px;
     margin: 1;
     position: absolute;
     top: 50%;
