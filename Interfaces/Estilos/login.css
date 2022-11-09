@@ -1,0 +1,27 @@
+form{
+    width: 50%;
+    margin: auto;
+}
+
+form input{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#logo{
+    width: 100px;
+}
+
+#caixa{
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+}
+
+a{
+    color: rgb(19, 159, 214);
+}
+
+a:hover{
+    text-decoration: solid;
+}
