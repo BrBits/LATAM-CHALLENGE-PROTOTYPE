@@ -38,13 +38,14 @@ body{
   
   .button {
     background-color: rgb(6, 11, 20); 
-    color: #cef3f5; 
-    border: 1px solid #cef3f5;
+    color: #686868; 
+    border: 1px solid #686868;
   }
   
   .button:hover {
     background-color: #213b55ff;
     color: #cef3f5;
+    border: 1px solid #cef3f5;
   }
   
 #logo{
@@ -58,7 +59,7 @@ body{
     border-radius: 30px;
     border-style: solid;
     border-width: 0px;
-    width: 600px;
+    width: 570px;
     margin: 1;
     position: absolute;
     top: 50%;

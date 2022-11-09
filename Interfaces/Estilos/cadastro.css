@@ -102,13 +102,14 @@ html, body {
     width: 100%;
     padding: 9px 20px;
     text-align: left;
-    border: 0;
+    border: 1;
+    border-color: #686868;
     outline: 0;
     border-radius: 6px;
-    background-color: #fff;
+    background-color: rgb(6, 11, 20);
     font-size: 15px;
     font-weight: 300;
-    color: #8D8D8D;
+    color: #636c72;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     margin-top: 16px;
@@ -150,7 +151,7 @@ html, body {
 
 .form-content textarea:hover, .form-content textarea:focus {
     border: 0;
-    background-color: #ebeff8;
+    background-color: #fff;
     color: #8D8D8D;
 }
 
