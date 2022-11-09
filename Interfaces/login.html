@@ -13,24 +13,22 @@
         <title>Scili.com</title>
     </head>
     <body>
-        <div class="row p-5 text-white text-center">
-            <div class="col-sm-3"></div>
-            <div id="caixa" class="col-sm-6 bg-dark ">
+        <div id="fora" class="text-white text-center">
+            <div id="caixa">
                 <img src="./Imagens/Logo-Scili.png" id="logo">
                 <h1>Seja bem vindo!</h1>
                 <form>
-                    <input type="email" class="form-control" placeholder="Insira seu e-mail">
-                    <input type="password" class="form-control" placeholder="Digite sua senha">
-                    <input type="submit" value="Entrar">
+                    <input type="email" id="form1" class="form-control form" placeholder="Insira seu e-mail">
+                    <input type="password" id="form2" class="form-control form" placeholder="Digite sua senha">
+                    <input type="submit" id="entrar" value="Entrar" class="btn btn-outline-success">
                 </form>
-                <button>
+                <button type="button" id="esq-senha" class="btn btn-outline-secondary">
                     Esqueceu sua senha?
                 </button>
                 <div>
-                    Não tem uma conta? <a>Cadastre-se</a>    
+                    Não tem uma conta? (<a href="./login.html" target="self">Cadastre-se</a>)
                 </div>
             </div>
-            <div class="col-sm-3"></div>
         </div>
     </body>
 </html>
