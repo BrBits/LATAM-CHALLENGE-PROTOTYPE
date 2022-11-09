@@ -1,0 +1,37 @@
+:root{
+    --back_grande: #131726;
+    --back_caixa: rgb(6, 11, 20);
+    --form_color: black;
+    --form_border: #686868;
+    --form_text: #cef3f5;
+    --link_color: rgb(19, 159, 214);
+}
+
+body{
+    background-color: var(--back_grande) !important;
+}
+
+#menus{
+    list-style-type: none;
+    color: var(--form_text);
+    overflow: hidden;
+}
+
+#menus li{
+    float: left;
+    margin-right: 50px;
+}
+
+#menus li a:link{
+    text-decoration: none;
+    color: var(--form_text) !important;
+}
+
+#menus li a:visited{
+    text-decoration: none;
+    color: var(--form_text) !important;
+}
+
+#menus li a:hover{
+    text-decoration: none;
+}
