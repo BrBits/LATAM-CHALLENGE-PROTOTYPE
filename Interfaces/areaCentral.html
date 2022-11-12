@@ -28,19 +28,19 @@
                     <img src="./Imagens/Logo-Scili.png" style="height: 60px;"> Nome da empresa/pesquisador
                 </div>
                 <div id="ultimo" class="post" onclick="abrirPost(this)">
-                    
+                    Ultimo
                 </div>
-                <div class="post destaque">
-
+                <div class="post destaque" onclick="abrirPost(this)">
+                    Destque 1
                 </div>
-                <div class="post destaque">
-
+                <div class="post destaque" onclick="abrirPost(this)">
+                    Destaque 2
                 </div>
-                <div class="anteriores post">
-
+                <div class="anteriores post" onclick="abrirPost(this)">
+                    Anteriores 1
                 </div>
-                <div class="anteriores post">
-                    
+                <div class="anteriores post" onclick="abrirPost(this)">
+                    Anteriores 2
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
                 post.style.marginBottom = "-300px";
                 post.style.marginLeft = "-500px";
                 post.innerHTML = "<button onclick=\"fecharPost()\" style=\"position: absolute; right: 10px; top: 10px;\">" +
-                "fechar </button>"
+                "fechar </button> \n <div style=\"text-align: center;\">"  + id.innerHTML + "</div>"
             }
             function fecharPost(){
                 let post = document.getElementById("postSecreto");

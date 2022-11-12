@@ -65,7 +65,7 @@ body{
 
 #post{
     width: calc(var(--ultimo-width) + var(--destaque-width) + 4 * var(--post-margin));
-    margin-left: 9%;
+    margin: auto;
     margin-top: 1%;
 }
 
