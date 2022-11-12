@@ -7,6 +7,11 @@
     --link_color: rgb(19, 159, 214);
 }
 
+#logo{
+    margin-top: 10px;
+    width: 60px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -19,13 +24,12 @@ body{
 }
 
 .nav_tabs{
-    width: 1500px;
+    width: 1100px;
     height: 850px;
     margin: 30px auto;
     position: relative; 
     border-radius: 30px;
-    background-color: black;
-    
+    background-color: rgb(6, 11, 20);
 }
 
 .nav_tabs ul{
@@ -74,9 +78,9 @@ body{
 .botao{
     position: absolute;
     border: 1px solid #686868;
-    background-color: black;
+    background-color: rgb(6, 11, 20);
     color: #686868;
-    width: 700px;
+    width: 760px;
     height: 180px;
     border-radius: 30px;
     padding: 20px;
@@ -88,40 +92,70 @@ body{
 }
 
 .botao:hover {
-    background-color: black;
+    background-color: rgb(6, 11, 20);
     color: #cef3f5;
     border: 1px solid #cef3f5;
-  }
+}
 
-  .titulo{
+.filtro{
+    width: 240px;
+    height: 70%;
+    float: right !important;
+    background-color: rgb(6, 11, 20);
+    margin: 120px 30px 150px 50px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+
+.bfiltros:checked ~ label{
+    color: #cef3f5;
+    font-weight: 600;
+    border: 1px solid #cef3f5;
+    background-color: #131726;
+}
+
+.bfiltros{
+    display: none;
+    margin-bottom: 0px !important;
+}
+
+.titulo{
     font-weight: 500;
     font-size: xx-large;
     color: white;
     margin-bottom: 15px;
-  }
+}
 
-  .barra{
+.titulo_filtro{
+    font-weight: 500;
+    font-size: larger;
+    color: white;
+}
+
+.barra{
     height: 5px;
     background-color: #cef3f5;
     margin-top: 10px;
-  }
+}
 
-  .barra1{
+.barra1{
     width: 67%;
-  }
+}
 
-  .barra2{
+.barra2{
     width: 50%;
-  }
+}
 
-  .infobarra{
+.infobarra{
     font-size: small;
     color: #cef3f5;
     margin-bottom: 10px;
-  }
+}
 
-  .infos{
+.infos{
     font-size: medium;
-  }
+}
 
 
