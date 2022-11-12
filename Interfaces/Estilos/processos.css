@@ -30,6 +30,7 @@ body{
 
 .nav_tabs ul{
     list-style: none;
+    float: left;
 }
 
 .nav_tabs ul li{
@@ -61,7 +62,6 @@ body{
 }
 
 .content{
-    position: absolute;
     border: 1px solid #686868 !important;
     background-color: black;
     color: #686868;
@@ -76,4 +76,9 @@ body{
     cursor: pointer;
 }
 
-
+#conteiner-flex{
+    display: flex;
+    clear: left;
+    flex-direction: column;
+    margin-left: 30px;
+}
