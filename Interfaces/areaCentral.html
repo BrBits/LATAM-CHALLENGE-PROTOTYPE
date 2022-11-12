@@ -15,6 +15,7 @@
     <body>
         <div id="navbar" class="text-white container-fluid">
             <ul id="menus">
+                <li style="padding: 0;"><img id="logo" src="./Imagens/Logo-Scili.png" onclick="href='areaCentral.html'"></li>
                 <li><a href="#Empresas">Empresas</a></li>
                 <li><a href="#Pesquisadores">Pesquisadores</a></li>
                 <li><a href="cadastroEstudante.html">Perfis</a></li>
@@ -26,7 +27,7 @@
                 <div id="nome-post">
                     <img src="./Imagens/Logo-Scili.png" style="height: 60px;"> Nome da empresa/pesquisador
                 </div>
-                <div id="ultimo" class="post">
+                <div id="ultimo" class="post" onclick="abrirPost(this)">
                     
                 </div>
                 <div class="post destaque">
@@ -43,5 +44,26 @@
                 </div>
             </div>
         </div>
+        <div id="postSecreto"></div>
+        <script>
+            function abrirPost (id) {
+                let post = document.getElementById("postSecreto");
+                post.style.display = "block";
+                post.style.position = "fixed";
+                post.style.bottom = "50%";
+                post.style.left = "50%";
+                post.style.width = "1000px";
+                post.style.height = "600px";
+                post.style.backgroundColor = "red";
+                post.style.marginBottom = "-300px";
+                post.style.marginLeft = "-500px";
+                post.innerHTML = "<button onclick=\"fecharPost()\" style=\"position: absolute; right: 10px; top: 10px;\">" +
+                "fechar </button>"
+            }
+            function fecharPost(){
+                let post = document.getElementById("postSecreto");
+                post.style.display = "none";
+            }
+        </script>
     </body>
 </html>
