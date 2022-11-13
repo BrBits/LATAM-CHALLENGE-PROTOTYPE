@@ -148,10 +148,10 @@ body{
     background-color: #cef3f5;
     margin-top: 10px;
     margin-left: 130px;
+    width: 580px;
 }
 
 .barra3{
-    width: 100%;
     border: 1px solid #cef3f5;
     background-color: rgb(6, 11, 20);
     margin-bottom: 10px;
