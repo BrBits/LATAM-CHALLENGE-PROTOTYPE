@@ -7,7 +7,7 @@
     --link_color: rgb(19, 159, 214);
     --ultimo-width: 700px;
     --ultimo-height: 400px;
-    --destaque-width: 240px;
+    --destaque-width: 280px;
     --destaque-height: 350px;
     --post-margin: 10px;
 }
@@ -205,4 +205,5 @@ body{
     background-color: black;
     font-size: 15px;
     padding: 10px;
+    border-radius: 10px;
 }
