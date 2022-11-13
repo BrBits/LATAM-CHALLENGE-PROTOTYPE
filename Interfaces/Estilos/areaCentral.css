@@ -5,7 +5,7 @@
     --form_border: #686868;
     --form_text: #cef3f5;
     --link_color: rgb(19, 159, 214);
-    --ultimo-width: 900px;
+    --ultimo-width: 700px;
     --ultimo-heigth: 400px;
     --destaque-width: 240px;
     --destaque-heigth: 350px;
@@ -51,6 +51,14 @@ body{
     text-decoration: none;
 }
 
+#flex{
+    display: flex;
+    flex-direction: row;
+    overflow: wrap;
+    margin: auto;
+    width: calc(var(--destaque-width) + var(--ultimo-width) + 4 * var(--post-margin) + 140px);
+}
+
 #nome-post{
     color: var(--form_text);
     margin: 20px;
@@ -61,28 +69,49 @@ body{
     float: left;
     width: var(--ultimo-width);
     height: var(--ultimo-heigth);
+    color: var(--form_text);
+    font-size: 20px;
+    text-align: left;
+    vertical-align: baseline;
+    background-image: url(../Imagens/USP.jfif);
 }
 
 #post{
     width: calc(var(--ultimo-width) + var(--destaque-width) + 4 * var(--post-margin));
-    margin: auto;
     margin-top: 1%;
+}
+
+.setas{
+    width: 70px;
+    margin-top: var(--destaque-heigth);
+    cursor: pointer;
 }
 
 .post{
     border-radius: 30px;
     background-color: var(--back_caixa);
     margin: var(--post-margin);
+    cursor: pointer;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .destaque{
     float: right;
     width: var(--destaque-width);
     height: var(--destaque-heigth); 
+    color: var(--form_text);
+    font-size: 20px;
+    text-align: left;
+    vertical-align: baseline;
 }
 
 .anteriores{
     float: left;
     width: calc(var(--ultimo-width)/2 - var(--post-margin));
     height: calc(2 * var(--destaque-heigth) - var(--ultimo-heigth));
+    color: var(--form_text);
+    font-size: 20px;
+    text-align: left;
+    vertical-align: baseline;
 }
