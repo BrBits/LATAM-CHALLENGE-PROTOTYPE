@@ -1,0 +1,44 @@
+:root{
+    --back_grande: #131726;
+    --back_caixa: rgb(6, 11, 20);
+    --form_color: black;
+    --form_border: #686868;
+    --form_text: #cef3f5;
+    --link_color: rgb(19, 159, 214);
+}
+
+#logo{
+    width: 200px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #131726 !important;
+    height: 100%;
+    width: 100%;
+}
+
+.box{
+    width: 1200px;
+    height: 1000px;
+    margin: 30px auto;
+    position: relative; 
+    border-radius: 30px;
+    background-color: rgb(6, 11, 20);
+}
+
+.wpp{
+    width: 100%;
+    height: 20%;
+    background-image: linear-gradient(to bottom, #cef3f5, #686868);
+    border-radius: 30px;
+}
+
+.foto{
+    border-top: 10%;
+    border-left: 10%;
+}
