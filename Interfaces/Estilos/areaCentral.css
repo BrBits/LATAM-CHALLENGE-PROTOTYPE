@@ -12,6 +12,32 @@
     --post-margin: 10px;
 }
 
+@keyframes abrir{
+    from{
+        height: 0px;
+        color: var(--back_caixa);
+        opacity: 0;
+    }
+    to{
+        height: 400px;
+        color: var(--form_text);
+        opacity: 1;
+    }
+}
+
+@keyframes fechar{
+    from{
+        height: 400px;
+        color: var(--form_text);
+        opacity: 1;
+    }
+    to{
+        height: 0px;
+        color: var(--back_caixa);
+        opacity: 0;
+    }
+}
+
 body{
     background-image: linear-gradient(to right, #0f2027, #12252c,
      #152931, #192e37, #1c333c,
@@ -20,9 +46,27 @@ body{
        height: 1000px;
 }
 
+.postSecreto{
+    display: block;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    width: 980px;
+    height: 0px;
+    padding: 30px;
+    background-color: var(--back_caixa);
+    color: var(--form_text);
+    margin-bottom: -200px;
+    margin-left: -490px;
+    border-radius: 20px;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
 #logo{
     height: 60px;
     padding-right: 20px;
+    background-color: var(--back_grande);
 }
 
 #logo:hover{
@@ -43,6 +87,7 @@ body{
     padding: 55px;
     padding-top: 15px;
     padding-bottom: 20px;
+    transition: 0.3s;
 }
 
 #menus li a:link{
@@ -114,6 +159,7 @@ body{
     padding: 20px;
     box-sizing: border-box;
     opacity: 0.7;
+    transition: 0.5s;
 }
 
 .post:hover{

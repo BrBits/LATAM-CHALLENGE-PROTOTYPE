@@ -65,31 +65,37 @@
                 <img id="next" class="setas" src="./Imagens/seta-direita.png" onclick="next()">
             </div>
         </div>
-        <div id="postSecreto" style="border-radius: 20px;"></div>
+        <div id="postSecreto" class="postSecreto">
+            
+        </div>
         <script>
             function abrirPost (id) {
                 let post = document.getElementById("postSecreto");
                 document.getElementById("flex").style.filter = "blur(5px)";
                 post.style.display = "block";
-                post.style.position = "fixed";
-                post.style.bottom = "50%";
-                post.style.left = "50%";
-                post.style.width = "980px";
-                post.style.height = "400px";
-                post.style.padding = "30px";
-                post.style.backgroundColor = "var(--form_border)";
-                post.style.color = "var(--form_text)";
-                post.style.marginBottom = "-200px";
-                post.style.marginLeft = "-490px";
+                post.addEventListener("webkitanimationend", fim(post));
+                post.style.webkitAnimation = "abrir 1s 1";
                 post.innerHTML = "<img onclick=\"fecharPost()\" style=\"width: 20px; position: absolute;" + 
                 " right: 10px; top: 10px; cursor: pointer;\" src=\"./Imagens/x.png\">\n" + "<p>" + id.childNodes[3].innerHTML + "</p>";
-                
+            }
+
+            function fim(post){
+                post.style.height = "400px";
+                post.style.color = "var(--form_text)";
+                post.style.opacity = "1";
             }
 
             function fecharPost(){
                 let post = document.getElementById("postSecreto");
                 document.getElementById("flex").style.filter = "blur(0px)";
-                post.style.display = "none";
+                post.addEventListener("webkitanimationend", fim2(post));
+                post.style.webkitAnimation = "fechar 1s 1"
+            }
+
+            function fim2(post){
+                post.style.height = "0px";
+                post.style.color = "var(--back_caixa)";
+                post.style.opacity = "0";
             }
 
             function prev(){
