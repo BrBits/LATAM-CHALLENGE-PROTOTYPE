@@ -6,14 +6,17 @@
     --form_text: #cef3f5;
     --link_color: rgb(19, 159, 214);
     --ultimo-width: 700px;
-    --ultimo-heigth: 400px;
+    --ultimo-height: 400px;
     --destaque-width: 240px;
-    --destaque-heigth: 350px;
+    --destaque-height: 350px;
     --post-margin: 10px;
 }
 
 body{
-    background-color: var(--back_grande) !important;
+    background-image: linear-gradient(to right, #0f2027, #12252c,
+     #152931, #192e37, #1c333c,
+      #1e3741, #203c47, #22404c,
+       #244553, #274959, #294e60, #2c5367);
 }
 
 #logo{
@@ -68,12 +71,19 @@ body{
 #ultimo{
     float: left;
     width: var(--ultimo-width);
-    height: var(--ultimo-heigth);
+    height: var(--ultimo-height);
     color: var(--form_text);
     font-size: 20px;
     text-align: left;
     vertical-align: baseline;
     background-image: url(../Imagens/USP.jfif);
+}
+
+#ultimo:hover{
+    position: relative;
+    width: calc(var(--ultimo-width) + 2 * var(--post-margin));
+    height: calc(var(--ultimo-height) + 2 * var(--post-margin));
+    margin: 0px;
 }
 
 #post{
@@ -83,12 +93,12 @@ body{
 
 .setas{
     width: 70px;
-    margin-top: var(--destaque-heigth);
+    margin-top: var(--destaque-height);
     cursor: pointer;
 }
 
 .post{
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: var(--back_caixa);
     margin: var(--post-margin);
     cursor: pointer;
@@ -99,19 +109,33 @@ body{
 .destaque{
     float: right;
     width: var(--destaque-width);
-    height: var(--destaque-heigth); 
+    height: var(--destaque-height); 
     color: var(--form_text);
     font-size: 20px;
     text-align: left;
     vertical-align: baseline;
 }
 
+.destaque:hover{
+    position: relative;
+    margin: 0px;
+    width: calc(var(--destaque-width) + 2 * var(--post-margin));
+    height: calc(var(--destaque-height) + 2 * var(--post-margin));
+}
+
 .anteriores{
     float: left;
     width: calc(var(--ultimo-width)/2 - var(--post-margin));
-    height: calc(2 * var(--destaque-heigth) - var(--ultimo-heigth));
+    height: calc(2 * var(--destaque-height) - var(--ultimo-height));
     color: var(--form_text);
     font-size: 20px;
     text-align: left;
     vertical-align: baseline;
+}
+
+.anteriores:hover{
+    position: relative;
+    margin: 0px;
+    width: calc(var(--ultimo-width)/2 - var(--post-margin) + 2 * var(--post-margin));
+    height: calc(2 * var(--destaque-height) - var(--ultimo-height) + 2 * var(--post-margin));
 }
