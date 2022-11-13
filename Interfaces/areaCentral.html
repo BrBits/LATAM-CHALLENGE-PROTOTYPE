@@ -18,7 +18,7 @@
                 <li style="padding: 0;"><img id="logo" src="./Imagens/Logo-Scili.png" onclick="href='areaCentral.html'"></li>
                 <li><a href="#Empresas">Empresas</a></li>
                 <li><a href="#Pesquisadores">Pesquisadores</a></li>
-                <li><a href="cadastroEstudante.html">Perfis</a></li>
+                <li><a href="perfil.html">Perfis</a></li>
                 <li><a href="#Notificações">Notificações</a></li>
                 <li><a href="./processos_bu.html">Processos</a></li>
             </ul>
@@ -65,7 +65,7 @@
                 <img id="next" class="setas" src="./Imagens/seta-direita.png" onclick="next()">
             </div>
         </div>
-        <div id="postSecreto"></div>
+        <div id="postSecreto" style="border-radius: 20px;"></div>
         <script>
             function abrirPost (id) {
                 let post = document.getElementById("postSecreto");
@@ -73,15 +73,15 @@
                 post.style.position = "fixed";
                 post.style.bottom = "50%";
                 post.style.left = "50%";
-                post.style.width = "1000px";
-                post.style.height = "600px";
+                post.style.width = "980px";
+                post.style.height = "400px";
                 post.style.padding = "30px";
                 post.style.backgroundColor = "var(--back_caixa)";
                 post.style.color = "var(--form_text)";
-                post.style.marginBottom = "-300px";
-                post.style.marginLeft = "-500px";
+                post.style.marginBottom = "-200px";
+                post.style.marginLeft = "-490px";
                 post.innerHTML = "<img onclick=\"fecharPost()\" style=\"width: 20px; position: absolute;" + 
-                " right: 10px; top: 10px;\" src=\"./Imagens/x.png\">\n" + "<p>" + id.childNodes[3].innerHTML + "</p>";
+                " right: 10px; top: 10px; cursor: pointer;\" src=\"./Imagens/x.png\">\n" + "<p>" + id.childNodes[3].innerHTML + "</p>";
                 
             }
 

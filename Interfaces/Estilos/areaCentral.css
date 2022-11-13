@@ -88,7 +88,7 @@ body{
 }
 
 .post{
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: var(--back_caixa);
     margin: var(--post-margin);
     cursor: pointer;
