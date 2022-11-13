@@ -17,11 +17,11 @@
             <div id="caixa">
                 <img src="./Imagens/Logo-Scili.png" id="logo">
                 <h1>Seja bem vindo!</h1>
-                <form>
+                <form method="post">
                     <input type="email" id="form1" class="form-control form" placeholder="Insira seu e-mail">
                     <input type="password" id="form2" class="form-control form" placeholder="Digite sua senha">
-                    <input type="submit" id="entrar" value="Entrar" class="btn btn-outline-success">
                 </form>
+                <button id="entrar" style="margin-bottom: 2.5%; width: 60%;" class="btn btn-outline-success" onclick="loc()">Entrar</button>
                 <button type="button" id="esq-senha" class="btn btn-outline-secondary">
                     Esqueceu sua senha?
                 </button>
@@ -30,5 +30,10 @@
                 </div>
             </div>
         </div>
+        <script>
+            function loc(){
+                window.location.href="./areaCentral.html";
+            }
+        </script>
     </body>
 </html>

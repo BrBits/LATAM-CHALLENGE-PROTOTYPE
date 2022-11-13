@@ -17,6 +17,7 @@ body{
      #152931, #192e37, #1c333c,
       #1e3741, #203c47, #22404c,
        #244553, #274959, #294e60, #2c5367);
+       height: 1000px;
 }
 
 #logo{
@@ -151,4 +152,11 @@ body{
     margin: 0px;
     width: calc(var(--ultimo-width)/2 - var(--post-margin) + 2 * var(--post-margin));
     height: calc(2 * var(--destaque-height) - var(--ultimo-height) + 2 * var(--post-margin));
+}
+
+.textos{
+    position: relative;
+    background-color: black;
+    font-size: 15px;
+    padding: 10px;
 }
