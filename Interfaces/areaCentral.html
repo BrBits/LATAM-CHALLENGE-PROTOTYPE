@@ -20,28 +20,49 @@
                 <li><a href="#Pesquisadores">Pesquisadores</a></li>
                 <li><a href="cadastroEstudante.html">Perfis</a></li>
                 <li><a href="#Notificações">Notificações</a></li>
+                <li><a href="./processos_bu.html">Processos</a></li>
             </ul>
         </div>
-        <div>
+        <div id="flex">
+            <div>
+                <img id="prev" class="setas" src="./Imagens/seta-esquerda.png" onclick="prev()">
+            </div>
             <div id="post">
                 <div id="nome-post">
                     <img src="./Imagens/Logo-Scili.png" style="height: 60px;"> Nome da empresa/pesquisador
                 </div>
                 <div id="ultimo" class="post" onclick="abrirPost(this)">
-                    Ultimo
+                    <div style="position: relative; top: 280px;">247 pesquisadores da USP estão entre os mais influentes da ciência mun- <br>
+                    dial. 181 foram considerados como os que tiveram mais citações ao longo <br>
+                    da carreira.</div>
+                    <div style="display: none">A USP tem 247 pesquisadores na Updated science-wide author databases
+                        of standardized citation indicators, uma lista que classifica os cientistas mais influentes do 
+                       mundo nas respectivas áreas de atuação.
+                       Divulgado no dia 10 de outubro pela editora Elsevier, 
+                       o estudo é elaborado anualmente por pesquisadores da Universidade Stanford (EUA) e analisa a 
+                       influência dos cientistas com base na Scopus – o maior banco de dados mundial de resumos e 
+                       citações de publicações científicas revisadas por pares –, a partir do cálculo de um indicador 
+                       composto de citações (c-score), capaz de retratar de maneira mais abrangente o impacto do 
+                       trabalho de cada cientista.</div>
                 </div>
-                <div class="post destaque" onclick="abrirPost(this)">
-                    Destque 1
+                <div class="post destaque" style="background-image: url(./Imagens/Itau.jfif);" onclick="abrirPost(this)">
+                    <div style="position: relative; top: 250px;">Oportunidade de <br>
+                    pesquisa no Itaú</div>
                 </div>
                 <div class="post destaque" onclick="abrirPost(this)">
                     Destaque 2
                 </div>
-                <div class="anteriores post" onclick="abrirPost(this)">
-                    Anteriores 1
+                <div class="anteriores post" style="background-image: url(./Imagens/lab_azul.jfif);" onclick="abrirPost(this)">
+                    <div style="position: relative; top: 140px;">Oportunidade de iniciação científica no LabAzul, <br>
+                    de ciências farmacêuticas, sobre cianobactérias.</div>
                 </div>
-                <div class="anteriores post" onclick="abrirPost(this)">
-                    Anteriores 2
+                <div class="anteriores post" style="background-image: url(./Imagens/Guiana.jfif);" onclick="abrirPost(this)">
+                    <div style="position: relative; top: 140px;">Universidades públicas paulistas lançam edital para intercâmbio<br>
+                    de professores com instituições francesas</div>
                 </div>
+            </div>
+            <div>
+                <img id="next" class="setas" src="./Imagens/seta-direita.png" onclick="next()">
             </div>
         </div>
         <div id="postSecreto"></div>
@@ -54,15 +75,27 @@
                 post.style.left = "50%";
                 post.style.width = "1000px";
                 post.style.height = "600px";
-                post.style.backgroundColor = "red";
+                post.style.padding = "30px";
+                post.style.backgroundColor = "var(--back_caixa)";
+                post.style.color = "var(--form_text)";
                 post.style.marginBottom = "-300px";
                 post.style.marginLeft = "-500px";
-                post.innerHTML = "<button onclick=\"fecharPost()\" style=\"position: absolute; right: 10px; top: 10px;\">" +
-                "fechar </button> \n <div style=\"text-align: center;\">"  + id.innerHTML + "</div>"
+                post.innerHTML = "<img onclick=\"fecharPost()\" style=\"width: 20px; position: absolute;" + 
+                " right: 10px; top: 10px;\" src=\"./Imagens/x.png\">\n" + "<p>" + id.childNodes[3].innerHTML + "</p>";
+                
             }
+
             function fecharPost(){
                 let post = document.getElementById("postSecreto");
                 post.style.display = "none";
+            }
+
+            function prev(){
+
+            }
+
+            function next(){
+
             }
         </script>
     </body>
