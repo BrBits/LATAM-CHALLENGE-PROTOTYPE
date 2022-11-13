@@ -8,7 +8,7 @@
 }
 
 #logo{
-    width: 200px;
+    width: 60px;
 }
 
 *{
@@ -23,22 +23,100 @@ body{
 }
 
 .box{
-    width: 1200px;
+    width: 1100px;
     height: 1000px;
     margin: 30px auto;
-    position: relative; 
     border-radius: 30px;
     background-color: rgb(6, 11, 20);
 }
 
 .wpp{
     width: 100%;
-    height: 20%;
-    background-image: linear-gradient(to bottom, #cef3f5, #686868);
+    height: 15%;
+    background-image: linear-gradient(to bottom, #686868, #686868);
     border-radius: 30px;
 }
 
 .foto{
-    border-top: 10%;
-    border-left: 10%;
+    margin-top: 70px;
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    background-color: #cef3f5;
+    margin: 100px 20px 0px 30px;
+}
+
+.nome{
+    font-weight: 500;
+    font-size: xx-large;
+    color: white;
+    margin-top: 15px;
+}
+
+.infos{
+    font-size: medium;
+    font-weight: 400;
+    color: white;
+}
+
+.espaco{
+    margin-bottom: 70px;
+}
+
+.publis{
+    width: 60%;
+    margin-left: 30px;
+    float: left;
+}
+
+.outros{
+    width: 350px;
+    height: 20%;
+    float: right !important;
+    margin-right: 30px;
+    border: 1px solid #686868;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    color: #686868;
+}
+
+.bolinha{
+    float: right;
+    border: 1px solid #686868;
+    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.botao{
+    border: 1px solid #686868;
+    background-color: rgb(6, 11, 20);
+    background-size: cover;
+    color: #686868;
+    width: 650px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    font-weight: 500;
+    font-size: x-large;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.botao:hover {
+    color: #cef3f5;
+    border: 1px solid #cef3f5;
+}
+
+.botaologo{
+    background-color: rgb(6, 11, 20);
+    float: right;
+    margin: 21px 30px 0px 20px;
 }
