@@ -8,7 +8,7 @@
 }
 
 #logo{
-    margin-top: 10px;
+    margin: 10px 30px 0px 0px;
     width: 60px;
 }
 
@@ -103,7 +103,7 @@ body{
     float: right !important;
     background-color: rgb(6, 11, 20);
     margin: 120px 30px 150px 50px;
-    border: 1px solid white;
+    border: 1px solid #686868;
     border-radius: 30px;
     padding: 20px;
 }
@@ -148,6 +148,13 @@ body{
     width: 50%;
 }
 
+.barra3{
+    width: 100%;
+    border: 1px solid #cef3f5;
+    background-color: rgb(6, 11, 20);
+    margin-bottom: 10px;
+}
+
 .infobarra{
     font-size: small;
     color: #cef3f5;
@@ -156,6 +163,10 @@ body{
 
 .infos{
     font-size: medium;
+}
+
+.botaologo{
+    background-color: rgb(6, 11, 20);
 }
 
 
