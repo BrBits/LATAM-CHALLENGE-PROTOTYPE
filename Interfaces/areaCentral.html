@@ -24,6 +24,9 @@
             </ul>
         </div>
         <div id="flex">
+            <div id="block">
+
+            </div>
             <div>
                 <img id="prev" class="setas" src="./Imagens/seta-esquerda.png" onclick="prev()">
             </div>
@@ -88,6 +91,10 @@
                 post.style.height = "400px";
                 post.style.color = "var(--form_text)";
                 post.style.opacity = "1";
+                post.style.zIndex = "2";
+                let block = document.getElementById("block");
+                block.style.display = "block";
+                block.style.zIndex = "1";
             }
 
             function fecharPost(){
@@ -101,6 +108,10 @@
                 post.style.height = "0px";
                 post.style.color = "var(--back_caixa)";
                 post.style.opacity = "0";
+                post.style.zIndex = "0";
+                let block = document.getElementById("block");
+                block.style.display = "none";
+                block.style.zIndex = "0";
             }
 
             function prev(){
