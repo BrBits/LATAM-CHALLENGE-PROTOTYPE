@@ -18,7 +18,10 @@
 }
 
 body{
-    background-color: #131726 !important;
+    background-image: linear-gradient(to right, #0f2027, #12252c,
+     #152931, #192e37, #1c333c,
+      #1e3741, #203c47, #22404c,
+       #244553, #274959, #294e60, #2c5367) !important; 
     height: 100%;
     width: 100%;
 }
@@ -29,7 +32,7 @@ body{
     margin: 30px auto;
     position: relative; 
     border-radius: 30px;
-    background-color: rgb(6, 11, 20);
+    background-color: #0f2027;
 }
 
 .nav_tabs ul{
@@ -78,7 +81,7 @@ body{
 .botao{
     position: absolute;
     border: 1px solid #686868;
-    background-color: rgb(6, 11, 20);
+    background-color: #0f2027;
     color: #686868;
     width: 760px;
     height: 180px;
@@ -101,7 +104,7 @@ body{
 }
 
 .botao:hover {
-    background-color: rgb(6, 11, 20);
+    background-color: #0f2027;
     color: #cef3f5;
     border: 1px solid #cef3f5;
 }
@@ -110,7 +113,7 @@ body{
     width: 240px;
     height: 70%;
     float: right !important;
-    background-color: rgb(6, 11, 20);
+    background-color: #0f2027;
     margin: 120px 30px 150px 50px;
     border: 1px solid #686868;
     border-radius: 30px;
@@ -122,7 +125,6 @@ body{
     color: #cef3f5;
     font-weight: 600;
     border: 1px solid #cef3f5;
-    background-color: #131726;
 }
 
 .bfiltros{
@@ -153,7 +155,7 @@ body{
 
 .barra3{
     border: 1px solid #cef3f5;
-    background-color: rgb(6, 11, 20);
+    background-color: #0f2027;
     margin-bottom: 10px;
 }
 
@@ -168,7 +170,8 @@ body{
 }
 
 .botaologo{
-    background-color: rgb(6, 11, 20);
+    background-color: #0f2027;
+    border: 1px solid #0f2027;
 }
 
 
