@@ -31,6 +31,7 @@ body{
     list-style-type: none;
     color: var(--form_text);
     overflow: hidden;
+    background-color: var(--form_border);
 }
 
 #menus li{
@@ -60,6 +61,8 @@ body{
     overflow: wrap;
     margin: auto;
     width: calc(var(--destaque-width) + var(--ultimo-width) + 4 * var(--post-margin) + 140px);
+    background-color: var(--back_grande);
+    border-radius: 10px;
 }
 
 #nome-post{
