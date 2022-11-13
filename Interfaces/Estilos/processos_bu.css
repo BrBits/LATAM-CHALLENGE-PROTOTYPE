@@ -91,6 +91,15 @@ body{
     text-align: left;
 }
 
+.caixa_img{
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+    float: left !important;
+    border-radius: 10px;
+    margin: 10px 20px 10px 0px;
+}
+
 .botao:hover {
     background-color: rgb(6, 11, 20);
     color: #cef3f5;
@@ -138,14 +147,7 @@ body{
     height: 5px;
     background-color: #cef3f5;
     margin-top: 10px;
-}
-
-.barra1{
-    width: 67%;
-}
-
-.barra2{
-    width: 50%;
+    margin-left: 130px;
 }
 
 .barra3{
