@@ -13,7 +13,7 @@
         <title>Scili.com</title>
     </head>
     <body>
-        <div id="navbar" class="text-white container-fluid">
+        <div id="navbar" class="text-white" style="width: 100%;">
             <ul id="menus">
                 <li style="padding: 0;"><img id="logo" src="./Imagens/Logo-Scili.png" onclick="href='areaCentral.html'"></li>
                 <li><a href="#Empresas">Empresas</a></li>
@@ -32,8 +32,8 @@
                     <img src="./Imagens/Logo-Scili.png" style="height: 60px;"> Nome da empresa/pesquisador
                 </div>
                 <div id="ultimo" class="post" onclick="abrirPost(this)">
-                    <div style="position: relative; top: 280px;">247 pesquisadores da USP estão entre os mais influentes da ciência mun- <br>
-                    dial. 181 foram considerados como os que tiveram mais citações ao longo <br>
+                    <div style="position: relative; top: 270px; background-color: black; padding: 10px;">247 pesquisadores da USP estão entre os mais influentes da ciência mun- 
+                    dial. 181 foram considerados como os que tiveram mais citações ao longo 
                     da carreira.</div>
                     <div style="display: none">A USP tem 247 pesquisadores na Updated science-wide author databases
                         of standardized citation indicators, uma lista que classifica os cientistas mais influentes do 
@@ -46,18 +46,18 @@
                        trabalho de cada cientista.</div>
                 </div>
                 <div class="post destaque" style="background-image: url(./Imagens/Itau.jfif);" onclick="abrirPost(this)">
-                    <div style="position: relative; top: 250px;">Oportunidade de <br>
+                    <div style="position: relative; top: 250px; background-color: black; padding: 10px;">Oportunidade de 
                     pesquisa no Itaú</div>
                 </div>
                 <div class="post destaque" onclick="abrirPost(this)">
                     Destaque 2
                 </div>
                 <div class="anteriores post" style="background-image: url(./Imagens/lab_azul.jfif);" onclick="abrirPost(this)">
-                    <div style="position: relative; top: 140px;">Oportunidade de iniciação científica no LabAzul, <br>
+                    <div style="position: relative; top: 140px; background-color: black; padding: 10px;">Oportunidade de iniciação científica no LabAzul, 
                     de ciências farmacêuticas, sobre cianobactérias.</div>
                 </div>
                 <div class="anteriores post" style="background-image: url(./Imagens/Guiana.jfif);" onclick="abrirPost(this)">
-                    <div style="position: relative; top: 140px;">Universidades públicas paulistas lançam edital para intercâmbio<br>
+                    <div style="position: relative; top: 140px; background-color: black; padding: 10px;">Universidades públicas paulistas lançam edital para intercâmbio
                     de professores com instituições francesas</div>
                 </div>
             </div>
@@ -69,6 +69,7 @@
         <script>
             function abrirPost (id) {
                 let post = document.getElementById("postSecreto");
+                document.getElementById("flex").style.filter = "blur(5px)";
                 post.style.display = "block";
                 post.style.position = "fixed";
                 post.style.bottom = "50%";
@@ -87,6 +88,7 @@
 
             function fecharPost(){
                 let post = document.getElementById("postSecreto");
+                document.getElementById("flex").style.filter = "blur(0px)";
                 post.style.display = "none";
             }
 

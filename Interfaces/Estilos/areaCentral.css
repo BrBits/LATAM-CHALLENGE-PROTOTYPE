@@ -21,24 +21,27 @@ body{
 
 #logo{
     height: 60px;
+    padding-right: 20px;
 }
 
 #logo:hover{
     cursor: pointer;
+    background-color: var(--back_grande);
 }
 
 #menus{
     list-style-type: none;
     color: var(--form_text);
     overflow: hidden;
-    background-color: var(--form_border);
+    background-color: var(--back_grande);
 }
 
 #menus li{
     float: left;
-    margin-right: 50px;
     height: 60px;
-    padding: 20px;
+    padding: 55px;
+    padding-top: 15px;
+    padding-bottom: 20px;
 }
 
 #menus li a:link{
@@ -51,8 +54,10 @@ body{
     color: var(--form_text) !important;
 }
 
-#menus li a:hover{
+#menus li:hover{
     text-decoration: none;
+    background-color: var(--form_border);
+    cursor: pointer;
 }
 
 #flex{
@@ -61,7 +66,7 @@ body{
     overflow: wrap;
     margin: auto;
     width: calc(var(--destaque-width) + var(--ultimo-width) + 4 * var(--post-margin) + 140px);
-    background-color: var(--back_grande);
+    background-color: rgba(15, 32, 39, 0.3);
     border-radius: 10px;
 }
 
@@ -107,6 +112,11 @@ body{
     cursor: pointer;
     padding: 20px;
     box-sizing: border-box;
+    opacity: 0.7;
+}
+
+.post:hover{
+    opacity: 1;
 }
 
 .destaque{
