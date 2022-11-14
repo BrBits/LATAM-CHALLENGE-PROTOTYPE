@@ -17,52 +17,113 @@
 }
 
 body{
-    background-color: #131726 !important;
-    background-size: cover;
+    background-image: linear-gradient(to right, #0f2027, #12252c,
+     #152931, #192e37, #1c333c,
+      #1e3741, #203c47, #22404c,
+       #244553, #274959, #294e60, #2c5367) !important; 
     height: 100%;
     width: 100%;
 }
 
 .box{
-    width: 1100px;
-    height: 1000px;
+    width: 1000px;
+    height: 500px;
     margin: 30px auto;
     border-radius: 30px;
-    background-color: rgb(6, 11, 20);
+    background-color: rgba(15, 32, 39, 0.3);
+}
+
+.box2{
+    width: 1000px;
+    height: 800px;
+    margin: 30px auto;
+    border-radius: 30px;
+}
+
+.boxposts{
+    float: left;
+    width: 650px;
+    height: 770px;
+    border-radius: 30px;
+    background-color: rgba(15, 32, 39, 0.3);
+    margin-right: 20px;
+    padding: 30px;
+}
+
+.boxop{
+    float: right;
+    width: 320px;
+    height: 410px;
+    border-radius: 30px;
+    background-color: rgba(15, 32, 39, 0.3);
+    padding: 20px;
+}
+
+.op{
+    border: 1px solid #686868;
+    background-color: rgba(15, 32, 39, 0.3);;
+    width: 280px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: larger;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.caixa_img{
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    float: left !important;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.op:hover {
+    color: #cef3f5;
+    border: 1px solid #cef3f5;
 }
 
 .wpp{
     width: 100%;
-    height: 15%;
+    height: 150px;
     background-image: linear-gradient(to bottom, #686868, #686868);
     border-radius: 30px;
 }
 
 .foto{
-    margin-top: 70px;
     float: left;
     width: 150px;
     height: 150px;
     border-radius: 30px;
     background-color: #cef3f5;
-    margin: 100px 20px 0px 30px;
+    margin: 70px 20px 0px 30px;
 }
 
 .nome{
     font-weight: 500;
     font-size: xx-large;
     color: white;
-    margin-top: 15px;
 }
 
 .infos{
     font-size: medium;
-    font-weight: 400;
+    font-weight: 500;
     color: white;
 }
 
-.espaco{
-    margin-bottom: 70px;
+.infos2{
+    font-size: large;
+    font-weight: 600;
+    color: #131726;
+    background-color: white;
+    border-radius: 30px;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
 }
 
 .publis{
@@ -71,41 +132,15 @@ body{
     float: left;
 }
 
-.outros{
-    width: 350px;
-    height: 20%;
-    float: right !important;
-    margin-right: 30px;
-    border: 1px solid #686868;
-    border-radius: 30px;
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: right;
-    color: #686868;
-}
-
-.bolinha{
-    float: right;
-    border: 1px solid #686868;
-    border-radius: 30%;
-    width: 50px;
-    height: 50px;
-    margin-top: 30px;
-    margin-right: 10px;
-}
-
 .botao{
-    border: 1px solid #686868;
-    background-color: rgb(6, 11, 20);
     background-size: cover;
     color: #686868;
-    width: 650px;
-    height: 300px;
+    width: 590px;
+    height: 200px;
     margin-top: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 20px;
     font-weight: 500;
-    font-size: x-large;
     transition-duration: 0.4s;
     cursor: pointer;
     text-align: left;
@@ -117,7 +152,28 @@ body{
 }
 
 .botaologo{
-    background-color: rgb(6, 11, 20);
+    background-color: rgba(15, 32, 39, 0.3);
+    border: 1px solid rgba(15, 32, 39, 0.3);
     float: right;
     margin: 21px 30px 0px 20px;
+}
+
+.caixas_1{
+    float: left;
+    width: 680px;
+    height: 220px;
+    border-radius: 30px;
+    border: 1px solid #686868;
+    margin: 30px 20px 30px 20px;
+    padding: 20px;
+}
+
+.caixas_2{
+    float: right;
+    width: 240px;
+    height: 220px;
+    border-radius: 30px;
+    border: 1px solid #686868;
+    margin: 10px 30px 30px 0px;
+    padding: 20px;
 }

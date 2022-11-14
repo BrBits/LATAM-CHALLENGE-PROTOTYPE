@@ -75,7 +75,7 @@ body{
     margin: 30px auto;
     position: relative; 
     border-radius: 30px;
-    background-color: #0f2027;
+    background-color: rgba(15, 32, 39, 0.3);;
 }
 
 .nav_tabs ul{
@@ -127,7 +127,7 @@ body{
 .botao{
     position: absolute;
     border: 1px solid #686868;
-    background-color: #0f2027;
+    background-color: rgba(15, 32, 39, 0.3);;
     color: #686868;
     width: 760px;
     height: 180px;
@@ -150,7 +150,6 @@ body{
 }
 
 .botao:hover {
-    background-color: #0f2027;
     color: #cef3f5;
     border: 1px solid #cef3f5;
 }
@@ -159,7 +158,7 @@ body{
     width: 240px;
     height: 70%;
     float: right !important;
-    background-color: #0f2027;
+    background-color: rgba(15, 32, 39, 0.3);;
     margin: 120px 30px 150px 50px;
     border: 1px solid #686868;
     border-radius: 30px;
@@ -201,7 +200,7 @@ body{
 
 .barra3{
     border: 1px solid #cef3f5;
-    background-color: #0f2027;
+    background-color: rgba(15, 32, 39, 0.3);;
     margin-bottom: 10px;
 }
 
@@ -216,8 +215,8 @@ body{
 }
 
 .botaologo{
-    background-color: #0f2027;
-    border: 1px solid #0f2027;
+    background-color: rgba(15, 32, 39, 0.3);;
+    border: 1px solid rgba(15, 32, 39, 0.3);;
 }
 
 
