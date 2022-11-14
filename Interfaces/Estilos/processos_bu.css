@@ -25,7 +25,7 @@
 
 #menus{
     list-style-type: none;
-    color: var(--form_text);
+    color: white !important;
     overflow: hidden;
     background-color: var(--back_grande);
 }
@@ -41,12 +41,13 @@
 
 #menus li a:link{
     text-decoration: none;
-    color: var(--form_text) !important;
+    color: white !important;
+    font-weight: 500;
 }
 
 #menus li a:visited{
     text-decoration: none;
-    color: var(--form_text) !important;
+    color: white !important;
 }
 
 #menus li:hover{
@@ -188,6 +189,7 @@ body{
     font-weight: 500;
     font-size: larger;
     color: white;
+    margin-left: 30px;
 }
 
 .barra{
@@ -217,6 +219,12 @@ body{
 .botaologo{
     background-color: rgba(15, 32, 39, 0.3);;
     border: 1px solid rgba(15, 32, 39, 0.3);;
+}
+
+.glyphicon-tags{
+    float: left;
+    color: white;
+    font-size: 20px;
 }
 
 
