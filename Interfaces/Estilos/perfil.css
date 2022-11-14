@@ -11,6 +11,50 @@
     width: 60px;
 }
 
+#logo2{
+    height: 60px;
+    padding-right: 20px;
+    background-color: var(--back_grande);
+}
+
+#logo2:hover{
+    cursor: pointer;
+    background-color: var(--back_grande);
+}
+
+#menus{
+    list-style-type: none;
+    color: white !important;
+    overflow: hidden;
+    background-color: var(--back_grande);
+}
+
+#menus li{
+    float: left;
+    height: 60px;
+    padding: 55px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+
+#menus li a:link{
+    text-decoration: none;
+    color: white !important;
+    font-weight: 500;
+}
+
+#menus li a:visited{
+    text-decoration: none;
+    color: white !important;
+}
+
+#menus li:hover{
+    text-decoration: none;
+    background-color: var(--form_border);
+    cursor: pointer;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +71,7 @@ body{
 
 .box{
     width: 1000px;
-    height: 500px;
+    height: 520px;
     margin: 30px auto;
     border-radius: 30px;
     background-color: rgba(15, 32, 39, 0.3);
@@ -61,7 +105,7 @@ body{
 
 .op{
     border: 1px solid #686868;
-    background-color: rgba(15, 32, 39, 0.3);;
+    background-color: rgba(15, 32, 39, 0.3);
     width: 280px;
     height: 100px;
     border-radius: 20px;
@@ -92,7 +136,8 @@ body{
     width: 100%;
     height: 150px;
     background-image: linear-gradient(to bottom, #686868, #686868);
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .foto{
@@ -160,30 +205,73 @@ body{
 
 .caixas_1{
     float: left;
-    width: 680px;
-    height: 220px;
+    width: 960px;
+    height: 280px;
     border-radius: 30px;
-    margin: 30px 20px 30px 20px;
+    margin: 0px 20px 30px 20px;
     padding-left: 10px;
+}
+
+.caixa_ctt{
+    float: right;
+    width: 240px;
+    height: 200px;
+    border-radius: 30px;
+    margin: 15px 20px 0px 20px;
+    padding-right: 10px;
+}
+
+.fonte_ctt{
+    color: white; 
+    font-weight: 500; 
+    font-size: medium; 
+    margin: 0px 5px 10px 30px;
+    float: right;
 }
 
 .caixas_2{
     float: right;
-    width: 240px;
-    height: 220px;
+    width: 320px;
+    height: 330px;
     border-radius: 30px;
-    border: 1px solid #686868;
-    margin: 10px 30px 30px 0px;
+    background-color: rgba(15, 32, 39, 0.3);
     padding: 20px;
+    margin-bottom: 30px;
+}
+
+.tags{
+    border: 1px solid #686868;
+    padding: 10px;
+    background-color: rgba(15, 32, 39, 0.3);
+    font-weight: 500;
+    font-size: larger;
+    color: #686868;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.tags:hover {
+    color: #cef3f5;
+    border: 1px solid #cef3f5;
 }
 
 .glyphicon-education{
     float: left;
     color: white;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .glyphicon-book{
+    float: left;
+    color: white;
+    font-size: 20px;
+}
+
+.glyphicon-envelope{
     float: left;
     color: white;
     font-size: 20px;
@@ -193,6 +281,7 @@ body{
     float: left;
     color: white;
     font-size: 20px;
+    margin-top: 5px;
 }
 
 .glyphicon-plus{
@@ -201,3 +290,4 @@ body{
     font-size: 20px;
     margin-top: 5px;
 }
+
