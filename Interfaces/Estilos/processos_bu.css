@@ -76,7 +76,7 @@ body{
     margin: 30px auto;
     position: relative; 
     border-radius: 30px;
-    background-color: rgba(15, 32, 39, 0.3);;
+    background-color: rgba(15, 32, 39, 0.3);
 }
 
 .nav_tabs ul{
@@ -89,7 +89,7 @@ body{
 }
 
 .nav_tabs label{
-    width: 200px;
+    width: 190px;
     padding: 10px;
     font-weight: 600;
     display: block;
@@ -159,7 +159,7 @@ body{
     width: 240px;
     height: 70%;
     float: right !important;
-    background-color: rgba(15, 32, 39, 0.3);;
+    background-color: rgba(15, 32, 39, 0.3);
     margin: 120px 30px 150px 50px;
     border: 1px solid #686868;
     border-radius: 30px;
