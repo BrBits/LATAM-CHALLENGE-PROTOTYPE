@@ -75,7 +75,7 @@ body{
     height: 800px;
     margin: 30px auto;
     position: relative; 
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: rgba(15, 32, 39, 0.3);
 }
 
@@ -104,7 +104,7 @@ body{
  
 .rd_tabs:checked ~ label{
     color: #cef3f5;
-    font-weight: 600;
+    font-weight: 500;
     border: 1px solid #cef3f5;
 }
 
@@ -132,7 +132,7 @@ body{
     color: #686868;
     width: 760px;
     height: 180px;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 20px;
     font-weight: 500;
     font-size: larger;
@@ -162,7 +162,7 @@ body{
     background-color: rgba(15, 32, 39, 0.3);
     margin: 120px 30px 150px 50px;
     border: 1px solid #686868;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 20px;
 }
 
