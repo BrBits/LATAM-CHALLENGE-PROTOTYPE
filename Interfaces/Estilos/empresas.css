@@ -1,0 +1,133 @@
+:root{
+    --back_grande: #131726;
+    --back_caixa: rgb(6, 11, 20);
+    --form_color: black;
+    --form_border: #686868;
+    --form_text: #cef3f5;
+    --link_color: rgb(19, 159, 214);
+}
+
+#logo2{
+    height: 60px;
+    padding-right: 20px;
+    background-color: var(--back_grande);
+}
+
+#logo2:hover{
+    cursor: pointer;
+    background-color: var(--back_grande);
+}
+
+#menus{
+    list-style-type: none;
+    color: white !important;
+    overflow: hidden;
+    background-color: var(--back_grande);
+}
+
+#menus li{
+    float: left;
+    height: 60px;
+    padding: 55px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+
+#menus li a:link{
+    text-decoration: none;
+    color: white !important;
+    font-weight: 500;
+}
+
+#menus li a:visited{
+    text-decoration: none;
+    color: white !important;
+}
+
+#menus li:hover{
+    text-decoration: none;
+    background-color: var(--form_border);
+    cursor: pointer;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right, #0f2027, #12252c,
+     #152931, #192e37, #1c333c,
+      #1e3741, #203c47, #22404c,
+       #244553, #274959, #294e60, #2c5367) !important; 
+    height: 100%;
+    width: 100%;
+}
+
+.caixa_aux{
+    width: 1100px;
+    height: 800px;
+    margin: 30px auto;
+    position: relative; 
+    border-radius: 30px;
+}
+
+.caixa_pesquisa{
+    float: left;
+    background-color: rgba(15, 32, 39, 0.3);
+    border-radius: 10px;
+    width: 800px;
+    height: 60px;
+    padding: 10px;
+}
+
+.input_perfis{
+    background-color: rgba(15, 32, 39, 0.3);
+    color: #686868;
+    border-radius: 10px;
+    width: 740px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #686868;
+}
+
+.botao_busca_perfis{
+    background-color: rgba(15, 32, 39, 0.3);
+    border: 0px;
+    float: right;
+}
+
+.glyphicon-search{
+    color: #686868;
+    font-size: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.caixa_tags{
+    float: right;
+    background-color: rgba(15, 32, 39, 0.3);
+    border-radius: 30px;
+    width: 280px;
+    height: 720px;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.caixa_perfis{
+    float: left;
+    background-color: rgba(15, 32, 39, 0.3);
+    border-radius: 30px;
+    width: 800px;
+    height: 720px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.glyphicon-seach{
+    float: left;
+    color: white;
+    font-size: 20px;
+}
