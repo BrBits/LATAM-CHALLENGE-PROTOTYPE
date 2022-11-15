@@ -121,9 +121,10 @@ body{
     flex-direction: row;
     overflow: wrap;
     margin: auto;
-    width: calc(var(--destaque-width) + var(--ultimo-width) + 4 * var(--post-margin) + 140px);
+    width: calc(var(--destaque-width) + var(--ultimo-width) + 4 * var(--post-margin) + 160px);
     background-color: rgba(15, 32, 39, 0.3);
     border-radius: 10px;
+    z-index: 1;
 }
 
 #nome-post{
@@ -155,10 +156,28 @@ body{
     margin-top: 1%;
 }
 
+#prev{
+    width: 80px;
+    margin-top: var(--destaque-height);
+}
+
+#next{
+    width: 80px;
+    margin-top: var(--destaque-height);
+}
+
 .setas{
     width: 70px;
-    margin-top: var(--destaque-height);
+    transition: 0.5s;
+    margin-right: 10px;
+    z-index: 1;
+}
+
+.setas:hover{
+    position: relative;
+    width: 80px;
     cursor: pointer;
+    margin-right: 0px;
 }
 
 .post{
@@ -222,10 +241,10 @@ body{
 /********************************************************************************/
 .circles{
     position: absolute;
-    top: 0;
+    top: 60px;
     left: 0;
     width: 100%;
-    height: 1000px;
+    height: 940px;
     overflow: hidden;
 }
 
@@ -239,6 +258,7 @@ body{
     animation: animate 25s linear infinite;
     bottom: -150px;
 }
+
 
 .circles li:nth-child(1){
     left: 25%;
@@ -327,9 +347,10 @@ body{
     }
 
     100%{
-        transform: translateY(-1000px) rotate(720deg);
+        transform: translateY(-960px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
     }
 
 }
+
