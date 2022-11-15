@@ -3,34 +3,72 @@
     <head>
         <!--Aqui criamos um link para o documento que contém os estilos da página-->
         <link rel="stylesheet" type="text/css" href="./estilos/processos.css">
+        <!--Flavicon-->
         <link rel="icon" type="image/x-icon" href="./Imagens/Logo-Scili.png">
         <!--Com essa tag meta o navegador entende que os caracteres são do UTF-8 e os acentos n bugam-->
         <meta charset="UTF-8">
         <!--Aqui o site funciona direito em celular tbm-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Importando o Bootstrap 5.2.2-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!--Titulo no navegador-->
         <title>Scili.com</title>
     </head>
-
     <body>
-        <nav class="nav_tabs">
-            <ul>
-                <li>
-                    <input type="radio" name="tabs" class="rd_tabs" id="meus_processos" checked>
-                    <label for="meus_processos">Meus Processos</label>
-                </li>
-                <li>
-                    <input type="radio" name="tabs" class="rd_tabs" id="oportunidades">
-                    <label for="oportunidades">Oportunidades</label>
-                </li>
+        <!--Essa lista são os quadrados do fundo-->
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!--Barra de pesquisa-->
+        <div id="navbar" class="text-white" style="width: 100%;">
+            <ul id="menus">
+                <li style="padding: 0;"><img id="logo" src="./Imagens/Logo-Scili.png" onclick="document.location.href='areaCentral.html'"></li>
+                <li onclick="location.href='./empresas.html'">Empresas</li>
+                <li onclick="location.href='./empresas.html'">Pesquisadores</li>
+                <li onclick="location.href='./perfil.html'">Perfil</li>
+                <li>Notificações</li>
+                <li onclick="location.href='./processos_bu.html'">Processos</li>
             </ul>
-            <div id="conteiner-flex">
-                <div><button class="content" onclick=""> Poli 1 </button></div>
-                <div><button class="content" onclick=""> Poli 2 </button></div>
+        </div>
+        <!--Parte da descrição desse processo-->
+        <div id="processo">
+            <button class="botao" onclick=""> 
+                <div> 
+                    <img src="./Imagens/poli.jpeg" class="caixa_img"> 
+                </div> 
+                <div>
+                    ESCOLA POLITÉCNICA: Pesquisa em Materiais Poliméricos 
+                </div>
+                <div class="barra" style="width: 70%;"></div>
+                <div class="infobarra">75% completo</div>
+                <div class="infos">tipo: bolsa de pesquisa FAPESP TT4</div>
+                <div class="infos">tags: technology, materials, polymers, usp, chemical engineering</div>
+            </button>
+            <div id="conteudo">
+                Pesquisa em materiais poliméricos conduzida pelo professor Hercílio Gomes do departamento de engenharia de materiais (PMT) da 
+                Escola Politécnica da Universidade de São Paulo. Você está participando como aluno de iniciação científica e participa das 
+                seguintes tarefas:
+                <ul>
+                    <li class="concluido">Entega de currículo</li>
+                    <li class="concluido">Estudo de caso</li>
+                    <li class="concluido">Pesquisa preliminar</li>
+                    <li class="concluido">Entrega do primeiro relatório</li>
+                    <li class="concluido">Pesquisa final</li>
+                    <li class="n-concluido">Entrega do relatório final</li>
+                    <li class="n-concluido">Defesa da tese</li>
+                </ul>
             </div>
-        </nav>
-        
+        </div>
     </body>
 </html>
 

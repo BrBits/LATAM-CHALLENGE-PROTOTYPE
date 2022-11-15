@@ -25,29 +25,21 @@
 
 #menus{
     list-style-type: none;
-    color: white !important;
     overflow: hidden;
     background-color: var(--back_grande);
+    padding-left: 32px;
 }
 
 #menus li{
     float: left;
     height: 60px;
     padding: 55px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 20px;
     transition: 0.3s;
-}
-
-#menus li a:link{
-    text-decoration: none;
-    color: white !important;
-    font-weight: 500;
-}
-
-#menus li a:visited{
-    text-decoration: none;
-    color: white !important;
+    color: var(--form_text);
+    font-size: 16px;
+    font-weight: 400 !important;
 }
 
 #menus li:hover{
@@ -169,7 +161,7 @@ body{
 
 .bfiltros:checked ~ label{
     color: #cef3f5;
-    font-weight: 600;
+    font-weight: 500;
     border: 1px solid #cef3f5;
 }
 

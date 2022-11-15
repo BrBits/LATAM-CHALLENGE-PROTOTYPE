@@ -1,3 +1,6 @@
+
+/**************************Configurações gerais**************************/
+
 :root{
     --back_grande: #131726;
     --back_caixa: rgb(6, 11, 20);
@@ -5,80 +8,252 @@
     --form_border: #686868;
     --form_text: #cef3f5;
     --link_color: rgb(19, 159, 214);
-}
-
-*{
-    margin: 0;
-    padding: 0;
+    --ultimo-width: 700px;
+    --ultimo-height: 400px;
+    --destaque-width: 280px;
+    --destaque-height: 350px;
+    --post-margin: 10px;
+    --processo-width: 1200px;
+    --botao-width: 760px;
 }
 
 body{
-    background-color: #131726 !important;
-    height: 100%;
+    background-image: linear-gradient(to right, #0f2027, #12252c,
+     #152931, #192e37, #1c333c,
+      #1e3741, #203c47, #22404c,
+       #244553, #274959, #294e60, #2c5367);
+       height: 1000px;
+}
+
+/******************************************************************************/
+/**************************Configurações navbar**************************/
+
+#logo{
+    height: 60px;
+    padding-right: 20px;
+    background-color: var(--back_grande);
+}
+
+#logo:hover{
+    cursor: pointer;
+    background-color: var(--back_grande);
+}
+
+#menus{
+    list-style-type: none;
+    color: var(--form_text);
+    overflow: hidden;
+    background-color: var(--back_grande);
+}
+
+#menus li{
+    float: left;
+    height: 60px;
+    padding: 55px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+
+#menus li:hover{
+    text-decoration: none;
+    background-color: var(--form_border);
+    cursor: pointer;
+}
+
+/******************************************************************************/
+/**************************Configurações processo**************************/
+
+#processo{
+    width: var(--processo-width);
+    height: 700px;
+    background-color: rgba(15, 32, 39, 0.3);
+    margin-top: 120px !important;
+    margin: auto;
+}
+
+    /**************************Configurações botao**************************/
+
+    .botao{
+        border: 1px solid var(--form_text);
+        background-color: rgba(15, 32, 39, 0.3);;
+        color: var(--form_text);
+        width: var(--botao-width);
+        height: 180px;
+        border-radius: 10px;
+        padding: 20px;
+        font-weight: 500;
+        font-size: larger;
+        margin: 50px calc(var(--processo-width) / 2 - var(--botao-width) / 2);
+        text-align: left;
+    }
+
+    .caixa_img{
+        background-size: cover;
+        width: 110px;
+        height: 110px;
+        float: left !important;
+        border-radius: 10px;
+        margin: 10px 20px 10px 0px;
+    }
+
+    .barra{
+        height: 5px;
+        background-color: #cef3f5;
+        margin-top: 10px;
+        margin-left: 130px;
+        width: 580px;
+    }
+
+    .infobarra{
+        font-size: small;
+        color: #cef3f5;
+        margin-bottom: 10px;
+    }
+
+    .infos{
+        font-size: medium;
+    }
+
+    /******************************************************************************/
+    /**************************Configurações texto**************************/
+
+    #conteudo{
+        color: var(--form_text);
+        font-size: medium;
+        width: var(--botao-width);
+        margin: 0px calc(var(--processo-width) / 2 - var(--botao-width) / 2);
+        border: 1px solid var(--form_text);
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .concluido{
+        color: var(--form_text);
+    }
+
+    .n-concluido{
+        color: var(--form_border);
+    }
+
+    /******************************************************************************/
+
+/******************************************************************************/
+/**************************Configurações animação**************************/
+
+.circles{
+    position: absolute;
+    top: 60px;
+    left: 0;
     width: 100%;
+    height: 940px;
+    overflow: hidden;
 }
 
-.nav_tabs{
-    width: 1500px;
-    height: 900px;
-    margin: 30px auto;
-    position: relative; 
-    border-radius: 30px;
-    background-color: black;
-    
-}
-
-.nav_tabs ul{
-    list-style: none;
-    float: left;
-}
-
-.nav_tabs ul li{
-    float: left;
-    display: block !important;
-}
-
-.nav_tabs label{
-    width: 200px;
-    padding: 10px;
-    font-weight: 600;
+.circles li{
+    position: absolute;
     display: block;
-    color: #686868;
-    border: 1px solid #686868;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 30px;
-    margin: 20px 5px 10px 0px;
-}
- 
-.rd_tabs:checked ~ label{
-    color: #cef3f5;
-    font-weight: 600;
-    border: 1px solid #cef3f5;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
 }
 
-.rd_tabs{
-    display: none;
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
 }
 
-.content{
-    border: 1px solid #686868 !important;
-    background-color: black;
-    color: #686868;
-    width: 800px;
+
+.circles li:nth-child(2){
+    left: 5%;
+    width: 120px;
     height: 120px;
-    margin-top: 20px;
-    border-radius: 30px;
-    padding: 20px;
-    font-weight: 600;
-    font-size: x-large;
-    transition-duration: 0.4s;
-    cursor: pointer;
+    animation-delay: 2s;
+    animation-duration: 12s;
 }
 
-#conteiner-flex{
-    display: flex;
-    clear: left;
-    flex-direction: column;
-    margin-left: 30px;
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
 }
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-960px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+/******************************************************************************/
