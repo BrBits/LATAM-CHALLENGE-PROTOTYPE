@@ -34,7 +34,7 @@
                     <input type="password" id="form2" class="form-control form" placeholder="Digite sua senha">
                 </form>
                 <button id="entrar" style="margin-bottom: 2.5%; width: 60%;" class="btn btn-outline-success" onclick="loc()">Entrar</button>
-                <button type="button" id="esq-senha" class="btn btn-outline-secondary">
+                <button onclick="senha()" type="button" id="esq-senha" class="btn btn-outline-secondary">
                     Esqueceu sua senha?
                 </button>
                 <div style="margin-bottom: 20px;">
@@ -45,6 +45,10 @@
         <script>
             function loc(){
                 window.location.href="./areaCentral.html";
+            }
+            function senha(){
+                let email;
+                email = prompt("Digite seu e-mail:");
             }
         </script>
     </body>

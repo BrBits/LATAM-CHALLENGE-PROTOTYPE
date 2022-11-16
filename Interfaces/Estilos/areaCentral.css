@@ -54,7 +54,7 @@ body{
     width: 980px;
     height: 0px;
     padding: 30px;
-    background-color: var(--back_caixa);
+    background-color: var(--back_grande);
     color: var(--form_text);
     margin-bottom: -200px;
     margin-left: -490px;
@@ -336,13 +336,13 @@ body{
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
-        border-radius: 0;
+        border-radius: 20%;
     }
 
     100%{
         transform: translateY(-960px) rotate(720deg);
         opacity: 0;
-        border-radius: 50%;
+        border-radius: 30%;
     }
 
 }
