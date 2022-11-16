@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            :root{
+       <style>
+        :root{
     --back_grande: #131726;
     --back_caixa: rgb(6, 11, 20);
     --form_color: black;
@@ -11,219 +11,284 @@
     --link_color: rgb(19, 159, 214);
 }
 
+#logo{
+    width: 60px;
+}
+
+#logo2{
+    height: 60px;
+    padding-right: 20px;
+    background-color: var(--back_grande);
+}
+
+#logo2:hover{
+    cursor: pointer;
+    background-color: var(--back_grande);
+}
+
+#menus{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: var(--back_grande);
+    padding-left: 32px;
+}
+
+#menus li{
+    float: left;
+    height: 60px;
+    padding: 55px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 0.3s;
+    color: var(--form_text);
+    font-size: 16px;
+    font-weight: 400 !important;
+}
+
+#menus li:hover{
+    text-decoration: none;
+    background-color: var(--form_border);
+    cursor: pointer;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-image: linear-gradient(to right, #0f2027, #12252c,
      #152931, #192e37, #1c333c,
       #1e3741, #203c47, #22404c,
-       #244553, #274959, #294e60, #2c5367);
-       height: 800px;
+       #244553, #274959, #294e60, #2c5367) !important; 
+    height: 100%;
+    width: 100%;
 }
 
-h1{
-    margin-bottom: 70px !important;
+.box{
+    width: 1000px;
+    height: 520px;
+    margin: 30px auto;
+    border-radius: 10px;
+    background-color: rgba(15, 32, 39, 0.3);
 }
 
-form{
+.box2{
+    width: 1000px;
+    height: 800px;
+    margin: 10px auto;
+    border-radius: 30px;
+}
+
+.boxposts{
+    float: left;
+    width: 650px;
+    height: 770px;
+    border-radius: 10px;
+    background-color: rgba(15, 32, 39, 0.3);
+    margin-right: 20px;
+    padding: 30px;
+}
+
+.boxop{
+    float: right;
+    width: 320px;
+    height: 410px;
+    border-radius: 10px;
+    background-color: rgba(15, 32, 39, 0.3);
+    padding: 20px;
+}
+
+.op{
+    border: 1px solid #686868;
+    background-color: rgba(15, 32, 39, 0.3);
+    width: 280px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: larger;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.caixa_img{
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    float: left !important;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.op:hover {
+    color: #cef3f5;
+    border: 1px solid #cef3f5;
+}
+
+.wpp{
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(to bottom, #686868, #686868);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.foto{
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #cef3f5;
+    margin: 70px 20px 0px 30px;
+}
+
+.nome{
+    font-weight: 500;
+    font-size: xx-large;
+    color: white;
+}
+
+.infos{
+    font-size: medium;
+    font-weight: 500;
+    color: white;
+}
+
+.infos2{
+    font-size: medium;
+    font-weight: 500;
+    color: #131726;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+.publis{
     width: 60%;
-    margin: auto;
+    margin-left: 30px;
+    float: left;
 }
 
-form input{
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+.botao{
+    background-size: cover;
+    color: #686868;
+    width: 590px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 500;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: left;
 }
 
-#logo{
-    width: 100px;
+.botao:hover {
+    color: #cef3f5;
+    border: 1px solid #cef3f5;
+}
+
+.botaologo{
+    background-color: rgba(15, 32, 39, 0.3);
+    border: 1px solid rgba(15, 32, 39, 0.3);
+    float: right;
+    margin: 21px 30px 0px 20px;
+}
+
+.caixas_1{
+    float: left;
+    width: 960px;
+    height: 280px;
+    border-radius: 10px;
+    margin: 0px 20px 30px 20px;
+    padding-left: 10px;
+}
+
+.caixa_ctt{
+    float: right;
+    width: 240px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 15px 20px 0px 20px;
+    padding-right: 10px;
+}
+
+.fonte_ctt{
+    color: white; 
+    font-weight: 500; 
+    font-size: medium; 
+    margin: 0px 5px 10px 30px;
+    float: right;
+}
+
+.caixas_2{
+    float: right;
+    width: 320px;
+    height: 330px;
+    border-radius: 10px;
+    background-color: rgba(15, 32, 39, 0.3);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.tags{
+    border: 1px solid #686868;
+    padding: 10px;
+    background-color: rgba(15, 32, 39, 0.3);
+    font-weight: 500;
+    font-size: larger;
+    color: #686868;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.tags:hover {
+    color: #cef3f5;
+    border: 1px solid #cef3f5;
+}
+
+.glyphicon-education{
+    float: left;
+    color: white;
+    font-size: 20px;
     margin-top: 10px;
 }
 
-#caixa{
-    background-color: rgb(6, 11, 20);
-    border-color: rgb(6, 11, 20);
-    border-radius: 30px;
-    border-style: solid;
-    border-width: 3px;
-    width: 700px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+.glyphicon-book{
+    float: left;
+    color: white;
+    font-size: 20px;
 }
 
-#fora{
-    margin: auto;
+.glyphicon-envelope{
+    float: left;
+    color: white;
+    font-size: 20px;
 }
 
-#entrar{
-    width: 100%;
-    border-radius: 30px;
+.glyphicon-tags{
+    float: left;
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
 }
 
-#esq-senha{
-    width: 60%;
-    border-radius: 30px;
-    margin-bottom: 50px;
-}
-
-a:link{
-    color: rgb(19, 159, 214);
-    text-decoration: none;
-}
-
-a:hover{
-    color: rgb(19, 159, 214);
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.form{
-    height: 70px;
-    background-color: black !important;
-    border-color: #686868 !important;
-    color: #cef3f5 !important;
-}
-
-#form1{
-    margin-bottom: 1px;
-}
-
-#form2{
-    margin-bottom: 70px;
-}
-
-/********************************************************************************/
-.circles{
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-}
-
-.circles li{
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 20%;
-    animation: animate 25s linear infinite;
-    bottom: 0px;
-    opacity: 0;
+.glyphicon-plus{
+    float: right;
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
 }
 
 
-.circles li:nth-child(1){
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    background-color: #35c2dfff;
-    animation-delay: 0s;
-}
-
-
-.circles li:nth-child(2){
-    left: 5%;
-    width: 120px;
-    height: 120px;
-    animation-delay: 2s;
-    background-color: #35c2dfff;
-    animation-duration: 12s;
-}
-
-.circles li:nth-child(3){
-    left: 70%;
-    width: 20px;
-    height: 20px;
-    background-color: #35c2dfff;
-    animation-delay: 4s;
-}
-
-.circles li:nth-child(4){
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    background-color: #9154f8ff;
-    animation-delay: 0s;
-    animation-duration: 18s;
-}
-
-.circles li:nth-child(5){
-    left: 65%;
-    width: 20px;
-    height: 20px;
-    background-color: #9154f8ff;
-    animation-delay: 0s;
-}
-
-.circles li:nth-child(6){
-    left: 75%;
-    width: 110px;
-    height: 110px;
-    background-color: #9154f8ff;
-    animation-delay: 3s;
-}
-
-.circles li:nth-child(7){
-    left: 35%;
-    width: 150px;
-    height: 150px;
-    background-color: rgb(226, 156, 35);
-    animation-delay: 7s;
-}
-
-.circles li:nth-child(8){
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    background-color: rgb(226, 156, 35);
-    animation-delay: 15s;
-    animation-duration: 45s;
-}
-
-.circles li:nth-child(9){
-    left: 20%;
-    width: 30px;
-    height: 30px;
-    background-color: rgb(226, 156, 35);
-    animation-delay: 2s;
-    animation-duration: 35s;
-}
-
-.circles li:nth-child(10){
-    left: 85%;
-    width: 150px;
-    height: 150px;
-    background-color: rgb(226, 156, 35);
-    animation-delay: 0s;
-    animation-duration: 11s;
-}
-
-
-
-@keyframes animate {
-
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 0;
-    }
-    50%{
-        transform: translateY(-400) rotate(360deg);
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(-800px) rotate(720deg);
-        opacity: 0; 
-    }
-
-}
-
-
-        </style>
+       </style>
         <!--Aqui criamos um link para o documento que contém os estilos da página-->
         <link rel="stylesheet" type="text/css" href="./estilos/perfil.css">
         <link rel="icon" type="image/x-icon" href="./Imagens/Logo-Scili.png">
