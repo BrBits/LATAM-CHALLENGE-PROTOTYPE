@@ -2,6 +2,366 @@
 <html>
     <head>
         <!--Aqui criamos um link para o documento que contém os estilos da página-->
+        <style>
+        :root{
+    --back_grande: #131726;
+    --back_caixa: rgb(6, 11, 20);
+    --form_color: black;
+    --form_border: #686868;
+    --form_text: #cef3f5;
+    --link_color: rgb(19, 159, 214);
+    --ultimo-width: 700px;
+    --ultimo-height: 400px;
+    --destaque-width: 280px;
+    --destaque-height: 350px;
+    --post-margin: 10px;
+}
+
+@keyframes abrir{
+    from{
+        height: 0px;
+        color: var(--back_caixa);
+        opacity: 0;
+    }
+    to{
+        height: 400px;
+        color: var(--form_text);
+        opacity: 1;
+    }
+}
+
+@keyframes fechar{
+    from{
+        height: 400px;
+        color: var(--form_text);
+        opacity: 1;
+    }
+    to{
+        height: 0px;
+        color: var(--back_caixa);
+        opacity: 0;
+    }
+}
+
+body{
+    background-image: linear-gradient(to right, #0f2027, #12252c,
+     #152931, #192e37, #1c333c,
+      #1e3741, #203c47, #22404c,
+       #244553, #274959, #294e60, #2c5367);
+       height: 1000px;
+}
+
+.postSecreto{
+    display: block;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    width: 980px;
+    height: 0px;
+    padding: 30px;
+    background-color: var(--back_grande);
+    color: var(--form_text);
+    margin-bottom: -200px;
+    margin-left: -490px;
+    border-radius: 20px;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    z-index: -1;
+}
+
+#block{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+}
+
+#logo2{
+    height: 60px;
+    padding-right: 20px;
+    background-color: var(--back_grande);
+}
+
+#logo2:hover{
+    cursor: pointer;
+    background-color: var(--back_grande);
+}
+
+#menus{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: var(--back_grande);
+    padding-left: 32px;
+}
+
+#menus li{
+    float: left;
+    height: 60px;
+    padding: 55px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 0.3s;
+    color: var(--form_text);
+    font-size: 16px;
+    font-weight: 400 !important;
+}
+
+#menus li:hover{
+    text-decoration: none;
+    background-color: var(--form_border);
+    cursor: pointer;
+}
+
+#flex{
+    display: flex;
+    flex-direction: row;
+    overflow: wrap;
+    margin: auto;
+    width: calc(var(--destaque-width) + var(--ultimo-width) + 4 * var(--post-margin) + 160px);
+    background-color: rgba(15, 32, 39, 0.3);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.nome-post{
+    color: var(--form_text);
+    margin: 20px;
+    font-size: 45px;
+}
+
+.ultimo{
+    float: left;
+    width: var(--ultimo-width);
+    height: var(--ultimo-height);
+    color: var(--form_text);
+    font-size: 20px;
+    text-align: left;
+    vertical-align: baseline;
+    background-image: url(../Imagens/USP.jfif);
+}
+
+.ultimo:hover{
+    position: relative;
+    width: calc(var(--ultimo-width) + 2 * var(--post-margin));
+    height: calc(var(--ultimo-height) + 2 * var(--post-margin));
+    margin: 0px;
+}
+
+.fora{
+    opacity: 1;
+    z-index: -1;
+    transition: 1s;
+    position: absolute;
+    left: 80px;
+    top: 1%;
+}
+
+#post{
+    width: calc(var(--ultimo-width) + var(--destaque-width) + 4 * var(--post-margin));
+    margin-top: 1%;
+}
+
+#prev{
+    width: 80px;
+    margin-top: var(--destaque-height);
+}
+
+#next{
+    width: 80px;
+    margin-top: var(--destaque-height);
+}
+
+.setas{
+    width: 70px;
+    transition: 0.5s;
+    margin-right: 10px;
+    z-index: 1;
+}
+
+.setas:hover{
+    position: relative;
+    width: 80px;
+    cursor: pointer;
+    margin-right: 0px;
+}
+
+.post{
+    border-radius: 20px;
+    background-color: var(--back_caixa);
+    margin: var(--post-margin);
+    cursor: pointer;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.post:hover{
+    opacity: 1;
+}
+
+.destaque{
+    float: right;
+    width: var(--destaque-width);
+    height: var(--destaque-height); 
+    color: var(--form_text);
+    font-size: 20px;
+    text-align: left;
+    vertical-align: baseline;
+}
+
+.destaque:hover{
+    position: relative;
+    margin: 0px;
+    width: calc(var(--destaque-width) + 2 * var(--post-margin));
+    height: calc(var(--destaque-height) + 2 * var(--post-margin));
+}
+
+.anteriores{
+    float: left;
+    width: calc(var(--ultimo-width)/2 - var(--post-margin));
+    height: calc(2 * var(--destaque-height) - var(--ultimo-height));
+    color: var(--form_text);
+    font-size: 20px;
+    text-align: left;
+    vertical-align: baseline;
+}
+
+.anteriores:hover{
+    position: relative;
+    margin: 0px;
+    width: calc(var(--ultimo-width)/2 - var(--post-margin) + 2 * var(--post-margin));
+    height: calc(2 * var(--destaque-height) - var(--ultimo-height) + 2 * var(--post-margin));
+}
+
+.textos{
+    position: relative;
+    background-color: black;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/********************************************************************************/
+.circles{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 940px;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 5%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 20%;
+    }
+
+    100%{
+        transform: translateY(-960px) rotate(720deg);
+        opacity: 0;
+        border-radius: 30%;
+    }
+
+}
+
+</style>
         <link rel="stylesheet" type="text/css" href="./estilos/areaCentral.css">
         <link rel="icon" type="image/x-icon" href="./Imagens/Logo-Scili.png">
         <!--Com essa tag meta o navegador entende que os caracteres são do UTF-8 e os acentos n bugam-->
