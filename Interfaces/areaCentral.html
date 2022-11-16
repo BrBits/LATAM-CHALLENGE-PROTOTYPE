@@ -44,41 +44,98 @@
                 <img class="setas" src="./Imagens/seta-esquerda.png" onclick="prev()">
             </div>
             <div id="post">
-                <div id="nome-post" style="font-size: 35px;">
-                    <img src="Imagens/USP.png" style="height: 60px; margin-right: 20px;"> Universidade de São Paulo
-                </div>
-                <div id="ultimo" class="post" onclick="abrirPost(this)">
-                    <div style="top: 315px;" class="textos">
-                        247 pesquisadores da USP estão entre os mais influentes da ciência mundial.
+                <div>
+                    <div class="nome-post" style="font-size: 35px;">
+                        <img src="Imagens/USP.png" style="height: 60px; margin-right: 20px;"> Universidade de São Paulo
                     </div>
-                    <div style="display: none">
-                        A USP tem 247 pesquisadores na Updated science-wide author databases
-                        of standardized citation indicators, uma lista que classifica os cientistas mais influentes do 
-                       mundo nas respectivas áreas de atuação.
-                       Divulgado no dia 10 de outubro pela editora Elsevier, 
-                       o estudo é elaborado anualmente por pesquisadores da Universidade Stanford (EUA) e analisa a 
-                       influência dos cientistas com base na Scopus – o maior banco de dados mundial de resumos e 
-                       citações de publicações científicas revisadas por pares –, a partir do cálculo de um indicador 
-                       composto de citações (c-score), capaz de retratar de maneira mais abrangente o impacto do 
-                       trabalho de cada cientista.
+                    <div class="ultimo post" onclick="abrirPost(this)">
+                        <div style="top: 315px;" class="textos">
+                            247 pesquisadores da USP estão entre os mais influentes da ciência mundial.
+                        </div>
+                        <div style="display: none; z-index: -1;">
+                            A USP tem 247 pesquisadores na Updated science-wide author databases
+                            of standardized citation indicators, uma lista que classifica os cientistas mais influentes do 
+                        mundo nas respectivas áreas de atuação.
+                        Divulgado no dia 10 de outubro pela editora Elsevier, 
+                        o estudo é elaborado anualmente por pesquisadores da Universidade Stanford (EUA) e analisa a 
+                        influência dos cientistas com base na Scopus – o maior banco de dados mundial de resumos e 
+                        citações de publicações científicas revisadas por pares –, a partir do cálculo de um indicador 
+                        composto de citações (c-score), capaz de retratar de maneira mais abrangente o impacto do 
+                        trabalho de cada cientista.<br><br>
+                        Acesse o link para mais informações: <a target="_blank" href="https://jornal.usp.br/institucional/247-pesquisadores-da-usp-estao-entre-os-mais-influentes-da-ciencia-mundial/">
+                            https://jornal.usp.br/institucional/247-pesquisadores-da-usp-estao-entre-os-mais-influentes-da-ciencia-mundial/
+                        </a>
+                        </div>
                     </div>
-                </div>
-                <div class="post destaque" style="background-image: url(./Imagens/Itau.jfif);" onclick="abrirPost(this)">
-                    <div style="top: 255px;" class="textos">
-                        Oportunidade de pesquisa no Itaú.
+                    <div class="post destaque" style="background-image: url(./Imagens/Itau.jfif);" onclick="abrirPost(this)">
+                        <div style="top: 255px;" class="textos">
+                            Oportunidade de pesquisa no Itaú.
+                        </div>
+                        <div style="display: none; z-index: -1;">
+                            O time de equity research do itaú se define como "Nosso time é formado por profissionais com grande experiência 
+                            em análise de valores mobiliários. Cada equipe de analistas é responsável por analisar as empresas do seu setor 
+                            de cobertura. A partir das informações públicas, os analistas são capazes de desenvolver relatórios diferenciados 
+                            e fazer recomendações de investimento para os seus clientes.". Ele está com vagas abertas para contratação de 
+                            pesquisadores nas áreas de IA e Data Science.<br><br>
+                            Acesse o link para mais informações: <a target="_blank" href="https://www.itau.com.br/itaubba-pt/o-que-fazemos/research">
+                                https://www.itau.com.br/itaubba-pt/o-que-fazemos/research
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="post destaque" onclick="abrirPost(this)">
-                    Destaque 2
-                </div>
-                <div class="anteriores post" style="background-image: url(./Imagens/lab_azul.jfif);" onclick="abrirPost(this)">
-                    <div style="top: 193px;" class="textos">
-                        Oportunidade de Iniciação Científica no LabAzul.
+                    <div style="background-image: url(./Imagens/Satelite-G1.jpg);" class="post destaque" onclick="abrirPost(this)">
+                        <div style="top: 235px;" class="textos">
+                            Como usinas solares no espaço podem transmitir energia pelo ar para a Terra
+                        </div>
+                        <div style="display: none; z-index: -1;">
+                            Parece bom demais para ser verdade: um plano para coletar energia solar do espaço e transmiti-la para a Terra usando microondas.<br>
+                            Mas é algo que pode acontecer já em 2035, de acordo com Martin Soltau, copresidente da Space Energy Initiative (SEI) - uma iniciativa 
+                            criada com colaboração de acadêmicos e da indústria de energia.<br>
+                            A SEI está trabalhando em um projeto chamado Cassiopeia, que planeja colocar um conjunto de grandes satélites em uma órbita alta da Terra.<br>
+                            Uma vez instalados, os satélites colheriam energia solar e a enviariam de volta para a Terra.<br>
+                            Soltau diz que o potencial é quase ilimitado.<br>
+                            "Em teoria, isso poderia fornecer toda a energia do mundo em 2050", afirma Soltau. "Há espaço suficiente em órbita para os satélites de energia 
+                            solar, e o suprimento de energia do Sol é vasto. Uma faixa estreita em torno da órbita geoestacionária da Terra recebe mais de 100 vezes a quantidade 
+                            de energia por ano do que toda a humanidade está prevista para usar em 2050."<br>
+                            No início deste ano, o governo do Reino Unido anunciou uma verba de 3 milhões de libras (R$ 7,7 milhões) em financiamento para projetos de energia 
+                            solar baseada no espaço (SBSP), após um estudo de engenharia realizado pela consultoria Frazer-Nash que concluiu que a tecnologia era viável. A SEI 
+                            espera obter uma grande parte desse dinheiro.<br><br>
+                            Acesse o link para mais informações: <a target="_blank" href="https://g1.globo.com/ciencia/noticia/2022/11/03/como-usinas-solares-no-espaco-podem-transmitir-energia-pelo-ar-para-a-terra.ghtml">
+                                https://g1.globo.com/ciencia/noticia/2022/11/03/como-usinas-solares-no-espaco-podem-transmitir-energia-pelo-ar-para-a-terra.ghtml
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="anteriores post" style="background-image: url(./Imagens/Guiana.jfif);" onclick="abrirPost(this)">
-                    <div style="top: 193px" class="textos">
-                        Abertos editais de intercâmbio para instituições francesas em SP.
+                    <div class="anteriores post" style="background-image: url(./Imagens/lab_azul.jfif);" onclick="abrirPost(this)">
+                        <div style="top: 193px;" class="textos">
+                            Oportunidade de Iniciação Científica no LabAzul.
+                        </div>
+                        <div style="display: none; z-index: -1;">
+                            O Lab azul está com uma oportunidade de pesquisa sobre ciano bactérias, para alunos de graduação com excelente 
+                            desempenho acadêmico e disponibilidade semana de 15 horas, no mínimo. É desejável que os candidatos sejam dos 
+                            cursos de ciências farmacêuticas, química, biologia ou correlatos — ciências moleculares, bioquímica etc. A 
+                            seleção será feita mediante análise de currículo e histórico escolar.<br><br>
+                            Acesse o link para mais informações: <a target="_blank" href="https://www.labazul.science/work-with-us">
+                                https://www.labazul.science/work-with-us
+                            </a>
+                        </div>
+                    </div>
+                    <div class="anteriores post" style="background-image: url(./Imagens/Guiana.jfif);" onclick="abrirPost(this)">
+                        <div style="top: 193px" class="textos">
+                            Abertos editais de intercâmbio para instituições francesas em SP.
+                        </div>
+                        <div style="display: none; z-index: -1;">
+                            Em parceria com o Consulado Geral da França em São Paulo, as três universidades estaduais paulistas – Unicamp, 
+                            USP e Unesp – acabam de lançar a nova edição do Programa de Cátedras Franco-Brasileiras, que prevê o intercâmbio 
+                            de curta duração de professores e pesquisadores entre instituições de ensino dos dois países. O programa foi 
+                            construído no “espírito de reciprocidade”, segundo o professor Osvaldir Pereira Taranto, diretor executivo da 
+                            Diretoria de Relações Internacionais (DERI) da Unicamp.<br>
+                            <br>
+                            De acordo com o diretor, o programa permite acolher professores e/ou pesquisadores de instituições francesas 
+                            numa das três universidades paulistas e também autoriza que profissionais das universidades de São Paulo sejam 
+                            recepcionados nas instituições francesas. O programa prevê períodos de permanência que podem variar de 20 a 45 dias.<br><br>
+                            Acesse o link para mais informações: <a target="_blank" href="https://www.unicamp.br/unicamp/noticias/2022/11/11/universidades-paulistas-lancam-edital-para-intercambio-de-professores-com">
+                                https://www.unicamp.br/unicamp/noticias/2022/11/11/universidades-paulistas-lancam-edital-para-intercambio-de-professores-com
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,7 +151,7 @@
                 let post = document.getElementById("postSecreto");
                 document.getElementById("flex").style.filter = "blur(5px)";
                 post.style.display = "block";
-                post.addEventListener("webkitanimationend", fim(post));
+                post.addEventListener("webkitAnimationEnd", fim(post));
                 post.style.webkitAnimation = "abrir 1s 1";
                 post.innerHTML = "<img onclick=\"fecharPost()\" style=\"width: 20px; position: absolute;" + 
                 " right: 10px; top: 10px; cursor: pointer;\" src=\"./Imagens/x.png\">\n" + "<p>" + id.childNodes[3].innerHTML + "</p>";
@@ -128,7 +185,7 @@
                 post.style.height = "0px";
                 post.style.color = "var(--back_caixa)";
                 post.style.opacity = "0";
-                post.style.zIndex = "0";
+                post.style.zIndex = "-1";
                 let block = document.getElementById("block");
                 block.style.display = "none";
                 block.style.zIndex = "0";
