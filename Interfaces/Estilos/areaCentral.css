@@ -73,41 +73,34 @@ body{
     z-index: 0;
 }
 
-#logo{
+#logo2{
     height: 60px;
     padding-right: 20px;
     background-color: var(--back_grande);
 }
 
-#logo:hover{
+#logo2:hover{
     cursor: pointer;
     background-color: var(--back_grande);
 }
 
 #menus{
     list-style-type: none;
-    color: var(--form_text);
     overflow: hidden;
     background-color: var(--back_grande);
+    padding-left: 32px;
 }
 
 #menus li{
     float: left;
     height: 60px;
     padding: 55px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 20px;
     transition: 0.3s;
-}
-
-#menus li a:link{
-    text-decoration: none;
-    color: var(--form_text) !important;
-}
-
-#menus li a:visited{
-    text-decoration: none;
-    color: var(--form_text) !important;
+    color: var(--form_text);
+    font-size: 16px;
+    font-weight: 400 !important;
 }
 
 #menus li:hover{
