@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, "Interfaces")));
 
 // exibição da página inicial
 app.get("/", function(req, res){
-    res.render("areaCentral");
+    res.render("login");
 });
 
 app.get("/areaCentral", function(req, res){
