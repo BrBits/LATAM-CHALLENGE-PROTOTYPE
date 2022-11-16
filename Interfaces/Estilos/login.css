@@ -108,7 +108,8 @@ a:hover{
     height: 20px;
     border-radius: 20%;
     animation: animate 25s linear infinite;
-    bottom: -150px;
+    bottom: 0px;
+    opacity: 0;
 }
 
 
@@ -204,9 +205,12 @@ a:hover{
 
     0%{
         transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-400) rotate(360deg);
         opacity: 1;
     }
-
     100%{
         transform: translateY(-800px) rotate(720deg);
         opacity: 0; 
